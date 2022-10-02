@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <img class="background-image" src="E:\projects\interactive-card-details-form-main\images\bg-main-desktop.png" alt="background-img">
+      <img class="background-image-phone" src="E:\projects\interactive-card-details-form-main\images\bg-main-desktop.png" alt="background-image-phone">
+      <div class="first-card">
+        <img class="card-one-image" src="E:\projects\interactive-card-details-form-main\images\bg-card-front.png" alt="card-one-image">
+        <img class="card-logo"  src="E:\projects\interactive-card-details-form-main\images\card-logo.svg" alt="card-img">
+        <p class="parag-zero">0000 0000 0000 0000 0000</p>
+        <p class="parag-date">JANE APPLESEED <span class="parag-date-sec">00/00</span></p>
+      </div>
+        <img class="card-two-image" src="E:\projects\interactive-card-details-form-main\images\bg-card-back.png" alt="card-img">
+
+      
+    </div>
+    <div class="right">
+      <form action="" method="get">
+        <label  for="">CARDHOLDER NAME</label><br>
+        <input class="input-name" type="text" name=""  id="input-name" placeholder="e.g. Jane Appleseed"><br>
+        <p id="parag-message-name"></p>
+        <label  for="ccn">CARD NUMBER</label><br>
+        <input class="input-number" id="input-number" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
+        <br><label for="">EXP. DATE(MM/YY) <span class="parag-two">CVC</span></label><br>
+        <input class="input-date" 
+        type="text" 
+        id="inputExpDate" 
+        placeholder="MM / YY" 
+        maxlength='7'>
+        <input  type="password" class="cvv" id="input-password" placeholder="e.g. 123"><br>
+        <button type="submit" class="sub" id="sub">Confirm</button>
+        <p id="parag-message" ></p>
+
+
+      </form>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
